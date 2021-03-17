@@ -22,12 +22,12 @@ app.use(notFound);
 
 app.use(errorHandler);
 
-const PORT = 5000;
+const PORT = 4000;
 
 app.listen(
     PORT,
     console.log(
         `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow
-            .inverse.bold
+            .bold
     )
 );
