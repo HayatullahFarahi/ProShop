@@ -13,7 +13,7 @@ import Rating from '../components/Rating';
 import Message from '../components/Massage';
 import Loader from '../components/Loader';
 import { useDispatch, useSelector } from 'react-redux';
-import { listProductDetails, listProducts } from '../actions/productActions';
+import { listProductDetails } from '../actions/productActions';
 
 const ProductScreen = ({ history, match }) => {
     const [qty, setQty] = useState(1);

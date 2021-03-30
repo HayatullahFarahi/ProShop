@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import Message from '../components/Massage';
 import CheckoutSteps from '../components/CheckoutSteps';
 import { createOrder } from '../actions/orderActions';
-import { resetCart } from '../actions/cartActions';
 
 const PlaceOrderScreen = ({ history }) => {
   const dispatch = useDispatch();
@@ -33,7 +32,6 @@ const PlaceOrderScreen = ({ history }) => {
   const { order, success, error } = orderCreate;
 
   useEffect(() => {
-    console.log('order id testing', order);
     if (success) {
       history.push(`/order/${order._id}`);
     }

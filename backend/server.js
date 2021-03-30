@@ -32,8 +32,6 @@ app.use(notFound);
 
 app.use(errorHandler);
 
-console.log('process.env.PORT');
-console.log(process.env.PORT);
 const PORT = 4000;
 
 app.listen(
