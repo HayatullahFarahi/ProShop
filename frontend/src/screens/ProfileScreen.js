@@ -32,7 +32,7 @@ const PorfileScreen = ({ history, location }) => {
     if (!userInfo) {
       history.push('login');
     } else {
-      if (!user.name) {
+      if (!user) {
         dispatch(getUserDetails('profile'));
         dispatch(listMyOrders());
       } else {
